@@ -58,7 +58,7 @@
 		751373D51F6537490067A343 /* PGPSignaturePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A71F65373E0067A343 /* PGPSignaturePacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		751373D61F6537490067A343 /* PGPSignaturePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373A81F65373E0067A343 /* PGPSignaturePacket.m */; };
 		751373D71F6537490067A343 /* PGPSignatureSubpacket+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A91F65373E0067A343 /* PGPSignatureSubpacket+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		751373D81F6537490067A343 /* PGPSignatureSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373AA1F65373E0067A343 /* PGPSignatureSubpacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		751373D81F6537490067A343 /* PGPSignatureSubpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373AA1F65373E0067A343 /* PGPSignatureSubpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		751373D91F6537490067A343 /* PGPSignatureSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373AB1F65373E0067A343 /* PGPSignatureSubpacket.m */; };
 		751373DA1F6537490067A343 /* PGPSignatureSubpacketCreationTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373AC1F65373E0067A343 /* PGPSignatureSubpacketCreationTime.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		751373DB1F6537490067A343 /* PGPSignatureSubpacketCreationTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373AD1F65373E0067A343 /* PGPSignatureSubpacketCreationTime.m */; };
@@ -84,7 +84,7 @@
 		752725B41FEB1B3C00301E98 /* PGPEncryptedSessionKeyPacketProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 752725B31FEB1B3C00301E98 /* PGPEncryptedSessionKeyPacketProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7537A6AD1F0D739A00892829 /* PGPCryptoHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 75572E281ED2193C00205871 /* PGPCryptoHash.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7537A6B21F0D739A00892829 /* PGPMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 752DE5BD1EEE3BE800637E38 /* PGPMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758514EA1EDF09C400CB313F /* PGPFoundation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758514EA1EDF09C400CB313F /* PGPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6B41F0D739A00892829 /* PGPTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 759DBA151915BC0400305549 /* PGPTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6B51F0D739A00892829 /* PGPBigNum+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547A6CA1F0080CF002C2145 /* PGPBigNum+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7537A6B61F0D739A00892829 /* PGPBigNum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547A6C61F007EF6002C2145 /* PGPBigNum.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -599,7 +599,6 @@
 				7537A6AD1F0D739A00892829 /* PGPCryptoHash.h in Headers */,
 				750F52C01F5C833400DA7DE4 /* PGPMacros+Private.h in Headers */,
 				7537A6B21F0D739A00892829 /* PGPMacros.h in Headers */,
-				7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */,
 				751373CF1F6537490067A343 /* PGPSecretKeyPacket+Private.h in Headers */,
 				7537A6B41F0D739A00892829 /* PGPTypes.h in Headers */,
 				751373C41F6537490067A343 /* PGPPacket+Private.h in Headers */,
@@ -609,6 +608,8 @@
 				75BF43E21F504D0F004334DE /* PGPKeyGenerator.h in Headers */,
 				757B54CB1FE5B68300E974CB /* PGPKeyring.h in Headers */,
 				7537A6CB1F0D739A00892829 /* PGPFingerprint.h in Headers */,
+				751373D81F6537490067A343 /* PGPSignatureSubpacket.h in Headers */,
+				7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */,
 				7537A6CC1F0D739A00892829 /* PGPS2K.h in Headers */,
 				7537A6CD1F0D739A00892829 /* PGPKeyID.h in Headers */,
 				75FA4A4020A791F200A453EC /* PGPElgamal.h in Headers */,
@@ -622,7 +623,6 @@
 				751373CD1F6537490067A343 /* PGPPublicSubKeyPacket.h in Headers */,
 				75D1E2651FCB823500D55F60 /* PGPUserAttributeImageSubpacket.h in Headers */,
 				751373851F6536310067A343 /* NSData+compression.h in Headers */,
-				751373D81F6537490067A343 /* PGPSignatureSubpacket.h in Headers */,
 				751373D21F6537490067A343 /* PGPSecretSubKeyPacket.h in Headers */,
 				751373F01F65382C0067A343 /* NSMutableData+PGPUtils.h in Headers */,
 				751373E41F6537490067A343 /* PGPUserAttributePacket.h in Headers */,
@@ -778,7 +778,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "export LANG=en_US.UTF-8\nexport LANGUAGE=en_US.UTF-8\nexport LC_ALL=en_US.UTF-8\n\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\"\n\nbundle exec \"${PROJECT_DIR}/scripts/generate-umbrella-header.rb\" \"${PROJECT_FILE_PATH}\"";
+			shellScript = "export LANG=en_US.UTF-8\nexport LANGUAGE=en_US.UTF-8\nexport LC_ALL=en_US.UTF-8\n\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\"\n\nbundle exec \"${PROJECT_DIR}/scripts/generate-umbrella-header.rb\" \"${PROJECT_FILE_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
