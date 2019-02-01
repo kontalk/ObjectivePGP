@@ -45,12 +45,12 @@
 		751373C81F6537490067A343 /* PGPPublicKeyEncryptedSessionKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7513739A1F65373E0067A343 /* PGPPublicKeyEncryptedSessionKeyPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		751373C91F6537490067A343 /* PGPPublicKeyEncryptedSessionKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7513739B1F65373E0067A343 /* PGPPublicKeyEncryptedSessionKeyPacket.m */; };
 		751373CA1F6537490067A343 /* PGPPublicKeyPacket+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7513739C1F65373E0067A343 /* PGPPublicKeyPacket+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		751373CB1F6537490067A343 /* PGPPublicKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7513739D1F65373E0067A343 /* PGPPublicKeyPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		751373CB1F6537490067A343 /* PGPPublicKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7513739D1F65373E0067A343 /* PGPPublicKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		751373CC1F6537490067A343 /* PGPPublicKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7513739E1F65373E0067A343 /* PGPPublicKeyPacket.m */; };
 		751373CD1F6537490067A343 /* PGPPublicSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7513739F1F65373E0067A343 /* PGPPublicSubKeyPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		751373CE1F6537490067A343 /* PGPPublicSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373A01F65373E0067A343 /* PGPPublicSubKeyPacket.m */; };
 		751373CF1F6537490067A343 /* PGPSecretKeyPacket+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A11F65373E0067A343 /* PGPSecretKeyPacket+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		751373D01F6537490067A343 /* PGPSecretKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A21F65373E0067A343 /* PGPSecretKeyPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		751373D01F6537490067A343 /* PGPSecretKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A21F65373E0067A343 /* PGPSecretKeyPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		751373D11F6537490067A343 /* PGPSecretKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373A31F65373E0067A343 /* PGPSecretKeyPacket.m */; };
 		751373D21F6537490067A343 /* PGPSecretSubKeyPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 751373A41F65373E0067A343 /* PGPSecretSubKeyPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		751373D31F6537490067A343 /* PGPSecretSubKeyPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 751373A51F65373E0067A343 /* PGPSecretSubKeyPacket.m */; };
@@ -87,8 +87,8 @@
 		7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 758514EA1EDF09C400CB313F /* PGPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6B41F0D739A00892829 /* PGPTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 759DBA151915BC0400305549 /* PGPTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6B51F0D739A00892829 /* PGPBigNum+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547A6CA1F0080CF002C2145 /* PGPBigNum+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7537A6B61F0D739A00892829 /* PGPBigNum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547A6C61F007EF6002C2145 /* PGPBigNum.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7537A6CA1F0D739A00892829 /* PGPMPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 759DBA161915CBDF00305549 /* PGPMPI.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7537A6B61F0D739A00892829 /* PGPBigNum.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547A6C61F007EF6002C2145 /* PGPBigNum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7537A6CA1F0D739A00892829 /* PGPMPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 759DBA161915CBDF00305549 /* PGPMPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6CB1F0D739A00892829 /* PGPFingerprint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7562858C19239F1B00127E24 /* PGPFingerprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7537A6CC1F0D739A00892829 /* PGPS2K.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DA135C191AE1D6004C9C76 /* PGPS2K.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7537A6CD1F0D739A00892829 /* PGPKeyID.h in Headers */ = {isa = PBXBuildFile; fileRef = 75734BD9191853DF00A54D6E /* PGPKeyID.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -607,31 +607,31 @@
 				75C501E61F1233A100FEC874 /* PGPRSA.h in Headers */,
 				75BF43E21F504D0F004334DE /* PGPKeyGenerator.h in Headers */,
 				757B54CB1FE5B68300E974CB /* PGPKeyring.h in Headers */,
+				7537A6B61F0D739A00892829 /* PGPBigNum.h in Headers */,
 				7537A6CB1F0D739A00892829 /* PGPFingerprint.h in Headers */,
 				751373D81F6537490067A343 /* PGPSignatureSubpacket.h in Headers */,
 				7537A6B31F0D739A00892829 /* PGPFoundation.h in Headers */,
 				7537A6CC1F0D739A00892829 /* PGPS2K.h in Headers */,
+				751373D01F6537490067A343 /* PGPSecretKeyPacket.h in Headers */,
 				7537A6CD1F0D739A00892829 /* PGPKeyID.h in Headers */,
+				751373CB1F6537490067A343 /* PGPPublicKeyPacket.h in Headers */,
+				751373C51F6537490067A343 /* PGPPacket.h in Headers */,
+				7537A6CA1F0D739A00892829 /* PGPMPI.h in Headers */,
 				75FA4A4020A791F200A453EC /* PGPElgamal.h in Headers */,
 				7537A6CE1F0D739A00892829 /* PGPUser.h in Headers */,
 				7537A6CF1F0D739A00892829 /* PGPPartialSubKey.h in Headers */,
 				7561B68E1F65E121001D2AD6 /* NSArray+PGPUtils.h in Headers */,
 				751373E81F6537490067A343 /* PGPUserIDPacket.h in Headers */,
 				752725B01FEB021700301E98 /* PGPSymetricKeyEncryptedSessionKeyPacket.h in Headers */,
-				751373D01F6537490067A343 /* PGPSecretKeyPacket.h in Headers */,
-				751373CB1F6537490067A343 /* PGPPublicKeyPacket.h in Headers */,
 				751373CD1F6537490067A343 /* PGPPublicSubKeyPacket.h in Headers */,
 				75D1E2651FCB823500D55F60 /* PGPUserAttributeImageSubpacket.h in Headers */,
 				751373851F6536310067A343 /* NSData+compression.h in Headers */,
 				751373D21F6537490067A343 /* PGPSecretSubKeyPacket.h in Headers */,
 				751373F01F65382C0067A343 /* NSMutableData+PGPUtils.h in Headers */,
 				751373E41F6537490067A343 /* PGPUserAttributePacket.h in Headers */,
-				751373C51F6537490067A343 /* PGPPacket.h in Headers */,
 				751373861F6536350067A343 /* NSData+PGPUtils.h in Headers */,
 				75D1E2691FCB939F00D55F60 /* PGPUser+Private.h in Headers */,
-				7537A6B61F0D739A00892829 /* PGPBigNum.h in Headers */,
 				75BF43E61F5076B9004334DE /* PGPKeyMaterial.h in Headers */,
-				7537A6CA1F0D739A00892829 /* PGPMPI.h in Headers */,
 				751373BE1F6537490067A343 /* PGPLiteralPacket.h in Headers */,
 				751373E21F6537490067A343 /* PGPTrustPacket.h in Headers */,
 				751373DC1F6537490067A343 /* PGPSignatureSubpacketHeader.h in Headers */,
@@ -882,6 +882,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75BAFAC61F0050A000A956FC /* Defaults-Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -900,6 +901,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75BAFAC51F0050A000A956FC /* Defaults-Release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

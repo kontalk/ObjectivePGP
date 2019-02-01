@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) int bytesCount;
 @property (nonatomic, readonly) NSData *data;
 
+- (void *)getBigNum;
+
 @end
 
 NS_ASSUME_NONNULL_END

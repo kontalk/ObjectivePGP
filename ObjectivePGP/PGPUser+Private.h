@@ -14,18 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PGPUser ()
 
-@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *selfCertifications;
-@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *otherSignatures;
-@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *revocationSignatures;
-
-@property (nonatomic, copy, nullable) PGPUserAttributePacket *userAttribute;
-@property (nonatomic, copy, readonly) PGPUserIDPacket *userIDPacket;
-
-@property (nonatomic, readonly) NSArray<PGPPacket *> *allPackets;
-
-- (instancetype)initWithUserIDPacket:(PGPUserIDPacket *)userPacket NS_DESIGNATED_INITIALIZER;
-
-- (nullable PGPSignaturePacket *)latestSelfCertificate;
 
 @end
 

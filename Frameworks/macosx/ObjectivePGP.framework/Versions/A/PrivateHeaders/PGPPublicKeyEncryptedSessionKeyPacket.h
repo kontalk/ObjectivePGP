@@ -9,10 +9,11 @@
 #import "PGPPacket.h"
 #import "PGPExportableProtocol.h"
 #import "PGPEncryptedSessionKeyPacketProtocol.h"
+#import "PGPPublicKeyPacket.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class PGPKeyID, PGPPublicKeyPacket, PGPSecretKeyPacket;
+@class PGPKeyID;
 
 @interface PGPPublicKeyEncryptedSessionKeyPacket : PGPPacket <PGPEncryptedSessionKeyPacketProtocol, NSCopying, PGPExportable>
 @property (nonatomic) UInt8 version;

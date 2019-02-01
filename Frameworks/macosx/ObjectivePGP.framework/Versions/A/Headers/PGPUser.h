@@ -9,12 +9,31 @@
 #import <ObjectivePGP/PGPMacros.h>
 #import <Foundation/Foundation.h>
 
+#import <ObjectivePGP/ObjectivePGP.h>
+#import <ObjectivePGP/PGPUserIDPacket.h>
+#import <ObjectivePGP/PGPUserAttributePacket.h>
+#import <ObjectivePGP/PGPSignaturePacket.h>
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 NS_SWIFT_NAME(User) @interface PGPUser : NSObject <NSCopying>
 
 @property (nonatomic, copy) NSString *userID;
 @property (nonatomic, nullable) NSData *image;
+
+@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *selfCertifications;
+@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *otherSignatures;
+@property (nonatomic, copy) NSArray<PGPSignaturePacket *> *revocationSignatures;
+
+@property (nonatomic, copy, nullable) PGPUserAttributePacket *userAttribute;
+@property (nonatomic, copy, readonly) PGPUserIDPacket *userIDPacket;
+
+@property (nonatomic, readonly) NSArray<PGPPacket *> *allPackets;
+
+- (instancetype)initWithUserIDPacket:(PGPUserIDPacket *)userPacket NS_DESIGNATED_INITIALIZER;
+
+- (nullable PGPSignaturePacket *)latestSelfCertificate;
 
 PGP_EMPTY_INIT_UNAVAILABLE
 

@@ -7,6 +7,7 @@
 //
 
 #import "PGPPublicKeyPacket.h"
+#import "PGPMPI.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) PGPSymmetricAlgorithm symmetricAlgorithm;
 @property (nonatomic, nullable, copy, readonly) NSData *ivData;
 @property (nonatomic, getter=isEncryptedWithPassphrase, readonly) BOOL encryptedWithPassphrase;
+
+@property (nonatomic, copy) NSArray<PGPMPI *> *secretMPIs; // decrypted MPI
 
 /**
  *  Decrypt packet

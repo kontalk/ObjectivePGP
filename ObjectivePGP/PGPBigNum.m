@@ -11,6 +11,7 @@
 #import "PGPMacros+Private.h"
 #import "PGPFoundation.h"
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation PGPBigNum
@@ -38,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
     pgp_defer { if (buf) { free(buf); } };
     BN_bn2bin(self.bignumRef, buf);
     return [NSData dataWithBytes:buf length:buflen];
+}
+
+- (void *)getBigNum {
+    return BN_dup(self.bignumRef);
 }
 
 - (void)dealloc {
